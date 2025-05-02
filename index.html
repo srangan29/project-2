@@ -153,7 +153,9 @@
     </header>
 
     <main>
-      <h2>Proposition: [STATE PROPOSITION]</h2>
+      <h2>Proposition: Police officers as a whole are constantly pushing the boundaries of their
+        power at the harm of civilians.
+      </h2>
 
       <section>
         <h3>FOR the Proposition</h3>
@@ -168,9 +170,12 @@
         <ul>
           <li>RATIONALE_1</li>
           <li>RATIONALE_2</li>
-          <li>Made sure to include a source listing as ProPublica, the website source for the data, is clearly very against the NYPD in this situation, 
-            as the NYPD is stated, despite a legal obligation to do so, to not be very helpful
-            in NYC's Civilian Complaint Review Board's investigations. 
+          <li><b>Decision choice: Including source.</b> Score: 1<br>
+            Rationale: My earnest reason for including it is that it gives the reader a sense of security that the visualization wasn't just made out of thin air and can be credible. 
+            However...
+            The source website for the dataset, ProPublica, is clearly very against the NYPD in this situation, having made articles on the topic. That's why I 
+            gave my earnestness a score of 1 and not 2 because my true intentions were to push the reader towards a viewpoint supported by the negative historical background of how this data was even retrieved in the first 
+            place (aka legally withheld from the public until 2020). 
           </li>
         </ul>
       </section>
@@ -187,8 +192,8 @@
 
         <ul>
           <li>RATIONALE_1</li>
-          <li>RATIONALE_2</li>
-          <li>While in my first visualization I included the source, I purposefully avoided mentioning it here because it would clearly drive a reader away from the 
+          <li>Ignoring unsubstainated complaints. Score: -0.5 </li>
+          <li>Neglecting the source. Score: -1. While in my first visualization I included the source, I purposefully avoided mentioning it here because it would clearly drive a reader away from the 
             view I wanted them to take away from it. Mentioning that there's a dataset of 30k+ police complaints from 1985-2020 that was kept
             from the public would be detrimental to that. A small thing, but something nonetheless.
           </li>
@@ -200,9 +205,26 @@
 
         <p>
             From the beginning, I had some relative idea that that my project would have to be in relation to police behavior and whether to view it as positive or negative. Thus, I initially
-            wanted to focus on this few bad apples vs entire rotten basket type metaphor. 
-            After talking it over, I then realized there would have to be some kind of 'defund-the-police' versus 'fund-the-police' stance, and thus intended to use my visualizations to support those goals.
-        </p>
+            wanted to focus on this idea of a few bad apples vs an entire rotten basket. However, this resulted in my basic question of how can I really show this? Does the data even support this?
+            I ended up doing a lot of reading on the dataset itself and ProPublica, and this is when I found out some things.
+            
+            I think the most difficult part of this project was when I realized that the dataset itself was built on an already negative perception of the police. 
+            After all, 30k complaints just from 1985-2020 that were <b>kept from the public</b> by NY government until 2020? This was also in late June of 2020, post George Floyd's death at the hands of a cop and around the subsequent protests.
+            This is probably why <a href="https://www.propublica.org/article/nypd-civilian-complaint-review-board-editors-note">so many unions of police officers were very much against this disclosure.</a>
+            I also think the concept of having to be very subtle with deception was... not my strong point. I attempted to incorporate a few ideas from the resources provided, one being source inclusion, but definitely had a hard time at first. So, I also tried focusing on 
+            color choices as those are the first things a reader would notice and care about. This is also why I used just blues for my against-proposition visualization, as I didn't want to go one way or another using something like red.
+            Using the map was also very fun with how easily the dataset had all the precincts for every row, making for easy data manipulation. It was just a matter of figuring out how to depict the data using the map and how a reader would perceive it.
+           
+            With "ethical analysis and visualization", I think having good intentions, and thus wanting to tell the truth of the data, is a core of it, and that means not forcing a story if it isn't there. 
+            I had to do a lot of data manipulation (like filtering, especially, and focusing on specific parts of the data) with my against-for visualization because the data itself only contained active-duty officers with at least 1 substainated complaint, 
+            while very basic data exploration revealed very clear patterns in the data that supported the for-proposition POV much easier.
+            Under this conception of having good intentions, however, I don't think we can truly set bounds on acceptable versus misleading decision choices because all designers have bias in some aspect, whether it's how they see colors or in reading left to right or just how they perceive a topic in general. 
+            A lot of the time, people can have very different ideas about what is effective and what isn't, and to me, if a designer has good intentions in wanting a 'true' visualization and believes this is the best way to show a piece of data, that's how they view it. 
+            No model can ever truly be perfect.  
+            I will say, however, providing a visualization without any credible source of where the data came from is the most misleading, as it doesn't allow a reader to have access to the source and forces them to trust that the creator isn't 
+            misguiding them. Filtering outliers can also be quite problematic if there's something important about them that would otherwise tell a different story, because a reader does not have all the skills and resources at hand to 
+            make sure they aren't missing something when viewing your visualization.
+          </p>
       </section>
     </main>
   </body>
