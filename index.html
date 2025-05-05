@@ -112,6 +112,7 @@
         box-shadow: 0 0.1em 0.2em var(--color-neutral-95);
         text-align: center;
         background: white;
+        object-fit: contain;
 
         > figcaption {
           font: 500 75% var(--font-sans);
@@ -170,8 +171,9 @@
         <ul>
           <li>Color choice of blue and yellow. Score: -1. <br> I intended for this because the blues and yellows are so drastically different that the yellow would easily grab a reader's attention and the dark blues would just blur together in comparison, emphasizing how different the amount of complaints are. Rather problematic because of this, but gives easy comprehension. </li>
           <li>Adding city names on map. Score: 1.5. <br> I'm not from New York myself, so I added some annotations to describe the relative locations. Kind of obscures the location lines due to overlap of annotations, but it helps label specific areas.     
-          <li>Adding explanation of 'exonerated' and 'substainated'. Score: 2. <br> Justification of what kinds of complaints I included, gives reader better understanding of data used for visualization. Also ensures </li>
+          <li>Adding explanation of 'exonerated' and 'substainated'. Score: 2. <br> Justification of what kinds of complaints I included, gives reader better understanding of data used for visualization.</li>
           <li>Adding source. Score: 2. <br> My earnest reason for including it is that it gives the reader a sense of security that the visualization wasn't just made out of thin air and can be credible. Reader can also then go check out the data themselves.</li>
+          <li>Not enough annotations/info provided on actual concrete numbers. Score: -2. Viewer forced to rely on a vague color scale on the side for reading, thus more inclined to just take the visualization at face value.</li>
         </ul>
       </section>
 
@@ -203,25 +205,25 @@
             From the beginning, I had some relative idea that I wanted my project to be in relation to police behavior and how to view it. Thus, I initially
             wanted to focus on this idea of a few bad apples vs an entire rotten basket. So throughout my data exploration, I was wondering how can I really show this? Does the data even support this?
             I ended up doing a lot of reading on the dataset itself and ProPublica and discovered some things. 
-
+<br>
             I think the most difficult part of this project was when I realized that the dataset itself was built on an already negative perception of the police. 
             After all, 30k complaints just from 1985-2020 that were <b>kept from the public</b> by NY government until 2020? This was also in late June of 2020, post George Floyd's death at the hands of a cop and around the subsequent protests.
             This is probably why <a href="https://www.propublica.org/article/nypd-civilian-complaint-review-board-editors-note">so many unions of police officers were very much against this disclosure.</a>
             Ultimately, this is why I ended up straying away from a more provocative idea ("police are causing harm versus not really") and instead chose to focus on <i>trend</i> ("systemic issue vs precinct/location issue"). Many complaints come from specific precincts versus others, but looking at the dataset 
             without aggregating, you might see none of that, especially if you completely neglect location of the complaints.
-            
+            <br>
             Having to be very subtle with deception was... not my strong point, but I attempted to incorporate a few ideas from the resources provided, one being source inclusion, but definitely had a hard time at first. So, I also tried focusing on 
             color choices as those are the first things a reader would notice and care about. 
             Using the map was also very fun with how easily the dataset had all the precincts for every row, making for easy data manipulation. It was just a matter of figuring out how to depict the data using the map and how a reader would perceive it.  
-           
+           <br>
             With "ethical analysis and visualization", I think having good intentions, and thus wanting to tell the truth of the data, is a core of it, and that means not forcing a story if it isn't there. 
             Therefore, when data is withheld in a visualization for reasons beyond just clarity, that's when we go from acceptable to misleading.
             Providing a visualization without any credible source of where the data came from is the most misleading, as it doesn't allow a reader to have access to the source and forces them to trust that the creator isn't 
             misguiding them. Filtering outliers can also be quite problematic if there's something important about them that would otherwise tell a different story, because a reader does not have all the skills and resources at hand to 
             make sure they aren't missing something when viewing your visualization.
-            I personally chucked out focusing on unsubstainated complaints as I felt they served no purpose for the focus of my visualizations, but I think it would be very misleading had I done something like 
-            Because the data itself only contained active-duty officers with at least 1 substainated complaint, it would also be very misleading to claim something like "this percentage is out of *all* officers in a precinct."
-            However, some things like neutral/softer color choice is arguably more acceptable to me because it allows the reader to make a decision without a color directly influencing them.
+            I personally chucked out unsubstainated complaints as I felt they served no purpose for the focus of my visualizations, but I think it would be very misleading had I done something claim I was talking about all complaints.
+            Because the data itself contained only active-duty officers with at least 1 substainated complaint, it would also be very misleading to claim something like "this percentage is out of *all* officers in a precinct."
+            However, some things like neutral/softer color choice is arguably more acceptable to me because it allows the reader to make a decision without a color directly influencing them (which is the opposite of what I did, haha).
       </section>
     </main>
   </body>
